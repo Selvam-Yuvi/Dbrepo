@@ -34,7 +34,7 @@ public class ComparisonPgm {
 		ArrayList<String> expected = new ArrayList<String>();
 
 		List<WebElement> listelements = driver.findElements(By.xpath("//span[text()='Electronics']/ancestor::ul/li"));
-
+        // Adding elements into list
 		for (WebElement we : listelements) {
 			expected.add(we.getText());
 
